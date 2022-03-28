@@ -1,0 +1,21 @@
+#First to initialize using below command. 
+#It looks for configuration files in current working directory and examines them if they need any provider plugings. 
+#If yes, then it tries to download plugins from Public registry unless if specifying a location.
+
+terraform init
+
+
+#To generate plan use below command. It looks into current configuration & context of state data.
+#Determines difference between two and makes a plan to update target environment to match desired configuration.
+#It will print plan to look out and verify changes.
+
+terraform plan
+
+#To make available of desired configuration use below command. It runs above command and make changes to file. 
+#Execute changes or modify target environment & state data will be updated to reflect changes.
+
+terraform apply
+
+#If we are done with our practice or use and to destroy all the desired configuration use below command. Be cautious while using this in production.
+
+terraform destroy
