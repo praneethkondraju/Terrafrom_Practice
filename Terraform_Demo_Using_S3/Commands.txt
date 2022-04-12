@@ -18,6 +18,6 @@ terraform fmt #For formatting Terraform code by HCL standards
 terraform init
 terraform validate
 
-terraform plan -out m6.tfplan
-terraform apply m6.tfplan
+terraform plan -out name_of_plan.tfplan
+terraform apply name_of_plan.tfplan
 
