@@ -4,7 +4,7 @@ resource "aws_instance" "nginx" {
   count         = var.instance_count
   ami           = nonsensitive(data.aws_ssm_parameter.ami.value)
   instance_type = var.aws_instance
-  key_name      = "OnlineEyeClinic"
+  key_name      = "Your_Key_Pair_filename"
 
   # '%' is used here because, it helps to assign the instances to subnets evenly
   subnet_id              = aws_subnet.subnets[(count.index % var.vpc_subnet_count)].id
