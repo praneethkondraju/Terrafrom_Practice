@@ -17,7 +17,7 @@ resource "aws_instance" "nginx" {
     type        = "ssh"
     host        = self.public_ip
     user        = "ec2-user"
-    private_key = file("OnlineEyeClinic")
+    private_key = file("Your_Key_Pair_filename")
     timeout     = "4m"
   }
 
