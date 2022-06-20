@@ -16,5 +16,5 @@
 
 ## Transferring StateData
 - Now we will transfer our Infrastructure StateData from local to Remote(Consul).
-- Type, `terraform init -backend-config="path=path/to/StateData/InRemote/Key"`(As configured)
-  - Example: `terraform init -backend-config="path=DevOps/state/globo-primary"` 
+- Type, `terraform init -backend-config="path=path/to/StateData/InRemote/Key"`(As configured in main.tf in **consul keys**)
+  - Example: `terraform init -backend-config="path=DevOps/state/TestData"` 
